@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "apos baixar:\r     $ npm i\r     verifique se as configuracoes .env estao de acordo com o banco \r     $ npx sequelize-cli db:migrate\r     para rodar o projeto\r     $ nodemon app.js\r     ou\r     $ npm run play",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "swagger-autogen": "node ./api/swagger.js",
+    "play": "npm run swagger-autogen && npm run start"
+  },
+  "author": "emerson azevedo",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.6.5",
+    "path": "^0.12.7",
+    "sequelize": "^6.35.1",
+    "swagger": "^0.7.5",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmersonTI733/backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EmersonTI733/backend/issues"
+  },
+  "homepage": "https://github.com/EmersonTI733/backend#readme"
+}
